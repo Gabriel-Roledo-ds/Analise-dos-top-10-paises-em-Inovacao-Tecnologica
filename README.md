@@ -1,1 +1,1 @@
-# indicadores_de_inova-o_tecnologica
+# indicadores_de_inovacao_tecnologica
