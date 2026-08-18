@@ -211,6 +211,12 @@ tempCodeRunnerFile.py
 
 # Marimo
 marimo/_static/
+
+
+# Dados gerados/derivados — reproduzíveis a partir do Notebook 1, não versionados
+*.csv
+*.pkl
+*.pickle
 marimo/_lsp/
 __marimo__/
 
