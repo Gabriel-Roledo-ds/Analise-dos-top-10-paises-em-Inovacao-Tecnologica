@@ -27,32 +27,44 @@ O projeto segue a metodologia **CRISP-DM** (Cross-Industry Standard Process for 
 1. Entendimento do Negócio
 2. Entendimento dos Dados
 3. Preparação dos Dados (limpeza, padronização, consolidação)
-4. Modelagem (rankings Top 10 e análise de correlação entre indicadores)
-5. Avaliação
-6. Implantação (tabelas finais e relatório)
+4. Modelagem (rankings Top 10 e evolução ao longo do tempo)
+5. Avaliação (correlação entre indicadores)
+6. Implantação (tabelas finais em docx e conclusões)
+
+## Estrutura do repositório
+
+O projeto é dividido em dois notebooks, pela ordem de execução:
+
+- **`01_coleta_preparacao_modelagem.ipynb`** — Etapas 1 a 4: carregamento das 7 bases, limpeza, padronização de nomes de país, consolidação, geração dos rankings Top 10 e análise de evolução (matrizes país × ano).
+- **`02_correlacao_avaliacao.ipynb`** — Etapas 5 e 6: correlação entre esforço (P&D) e resultado (patentes/exportações), avaliação dos resultados e exportação das tabelas finais para docx.
+
+**Os arquivos de dados (CSV, pickle) não são versionados neste repositório** — são gerados automaticamente ao rodar o Notebook 1, e consumidos pelo Notebook 2. Rode sempre o Notebook 1 primeiro.
 
 ## Status do projeto
 
 - [x] Coleta e limpeza das 7 bases (Banco Mundial + WIPO)
 - [x] Padronização de nomes de país e tradução para português
 - [x] Base consolidada única
-- [x] Top 10 por indicador (ano-base)
-- [ ] Evolução do Top 10 ao longo dos 5 recortes de cada indicador
+- [x] Top 10 por indicador (ano-base) e evolução ao longo dos 5 recortes
+- [x] Matrizes de posição (país × ano) por indicador
 - [ ] Análise de correlação entre indicadores (esforço x resultado)
-- [ ] Relatório final
+- [ ] Substituição de valores ausentes por "N/D" nas tabelas finais
+- [ ] Exportação das tabelas para docx (Fase 1)
+- [ ] Relatório final (Fase 2)
 
 ## Como executar
 
 O notebook foi desenvolvido no Google Colab, com os dados armazenados no Google Drive. Para rodar:
 1. Faça o upload das bases de dados para uma pasta no seu Drive
-2. Ajuste a variável `CAMINHO` no notebook para apontar para essa pasta
-3. Execute as células em ordem (Setup → Funções → Carregamento → Preparação → Modelagem)
+2. Ajuste a variável `CAMINHO` para apontar para essa pasta
+3. Execute `01_coleta_preparacao_modelagem.ipynb` do início ao fim — a última célula exporta os arquivos que o segundo notebook precisa
+4. Execute `02_correlacao_avaliacao.ipynb`
 
 ## Explorações extras
 
-Ao longo do projeto, farei algumas análises pontuais para compartilhar no LinkedIn — não fazem parte da entrega formal do trabalho, mas documentam o processo e trazem recortes adicionais sobre os dados.
+Ao longo do projeto, algumas análises pontuais viraram conteúdo para compartilhar no LinkedIn — não fazem parte da entrega formal do trabalho, mas documentam o processo e trazem recortes adicionais sobre os dados.
 
-- **Brasil x China: 20 anos de inovação tecnológica** — comparação de trajetórias em investimento em P&D, patentes, marcas e desenhos industriais. [[link do post](https://www.linkedin.com/posts/gabriel-roledo_brasil-e-china-analisando-indicadores-de-ugcPost-7495009041862066176-v-Mv/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADV8pn4B5h_wYfKEMyUD5EjN2KxHtve26gg)]
+- **Brasil x China: 20 anos de inovação tecnológica** — comparação de trajetórias em investimento em P&D, patentes, marcas e desenhos industriais. [link do post](https://www.linkedin.com/posts/gabriel-roledo_brasil-e-china-analisando-indicadores-de-ugcPost-7495009041862066176-v-Mv/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADV8pn4B5h_wYfKEMyUD5EjN2KxHtve26gg)]
 - *(mais posts serão adicionados aqui conforme o projeto avança)*
 
 ## Autor
