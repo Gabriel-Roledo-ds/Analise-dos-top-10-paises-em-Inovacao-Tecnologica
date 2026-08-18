@@ -52,7 +52,7 @@ O notebook foi desenvolvido no Google Colab, com os dados armazenados no Google 
 
 Ao longo do projeto, farei algumas análises pontuais para compartilhar no LinkedIn — não fazem parte da entrega formal do trabalho, mas documentam o processo e trazem recortes adicionais sobre os dados.
 
-- **Brasil x China: 20 anos de inovação tecnológica** — comparação de trajetórias em investimento em P&D, patentes, marcas e desenhos industriais. [link do post]
+- **Brasil x China: 20 anos de inovação tecnológica** — comparação de trajetórias em investimento em P&D, patentes, marcas e desenhos industriais. [[link do post](https://www.linkedin.com/posts/gabriel-roledo_brasil-e-china-analisando-indicadores-de-ugcPost-7495009041862066176-v-Mv/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADV8pn4B5h_wYfKEMyUD5EjN2KxHtve26gg)]
 - *(mais posts serão adicionados aqui conforme o projeto avança)*
 
 ## Autor
