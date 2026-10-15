@@ -47,7 +47,8 @@ O projeto é dividido em dois notebooks, pela ordem de execução:
 - [x] Base consolidada única
 - [x] Top 10 por indicador (ano-base) e evolução ao longo dos 5 recortes
 - [x] Matrizes de posição (país × ano) por indicador
-- [ ] Análise de correlação entre indicadores (esforço x resultado)
+- [x] Análise de correlação entre indicadores (esforço x resultado) — Pearson feito
+- [ ] Robustez da correlação (Spearman, log, sem a China): célula adicionada no Notebook 2, falta executar e atualizar o texto
 - [ ] Substituição de valores ausentes por "N/D" nas tabelas finais
 - [ ] Exportação das tabelas para docx (Fase 1)
 - [ ] Relatório final (Fase 2)
